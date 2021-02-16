@@ -1,8 +1,6 @@
 package question1;
 
-import java.util.Stack;
-
-public class PileAdaptor extends StackImpl implements PileI {
+public class PileAdaptor implements PileI {
 
     public StackImpl stack;
 
@@ -17,8 +15,7 @@ public class PileAdaptor extends StackImpl implements PileI {
 
     @Override
     public Object depiler() {
-        this.stack.pop();
-        return this.stack;
+        return this.stack.pop();
     }
 
     @Override
